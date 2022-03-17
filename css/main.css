@@ -76,9 +76,122 @@ input[class^="btn"]:hover {
   margin: 4rem 0;
 }
 
+.sectionTitle {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottomLine {
+  height: 3px;
+  width: 5rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+#homeA .specials {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#homeA .specials .fas {
+  color: #ffbc00;
+  padding-bottom: 0.4rem;
+}
+
+#homeB .stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#homeB .stats li {
+  line-height: 2;
+}
+
+#homeB .stats li.stats-title {
+  font-size: 1.5rem;
+}
+
+#homeB .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#homeB .stats div {
+  padding: 3rem 0;
+}
+
+#homeB .stats div:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+#homeB .stats div:nth-child(even) {
+  background: #ccc;
+}
+
+#homeC .process {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+#homeC .processIcon {
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#homeC .processIcon:hover {
+  background: #ffbc00;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#homeC .processIcon:hover .processStep {
+  background: #333;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+}
+
+#homeC .processStep {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #ffbc00;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -169,48 +282,48 @@ img {
   line-height: 1.2;
 }
 
-#homeA .specials {
-  margin-top: 3rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+#mainFooter {
+  background: #333;
+  color: #fff;
+  height: 5rem;
 }
 
-#homeA .specials .fas {
-  color: #ffbc00;
-  padding-bottom: 0.4rem;
+#mainFooter .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#homeB .stats {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+#mainFooter .footerContent .socials .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
 }
 
-#homeB .stats li {
-  line-height: 2;
+#mainFooter .footerContent .socials .fab:hover:nth-child(odd) {
+  background-color: crimson;
+  color: #333;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
 }
 
-#homeB .stats li.stats-title {
-  font-size: 1.5rem;
-}
-
-#homeB .stats li.stats-number {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#homeB .stats div {
-  padding: 3rem 0;
-}
-
-#homeB .stats div:nth-child(odd) {
-  background: #f4f4f4;
-}
-
-#homeB .stats div:nth-child(even) {
-  background: #ccc;
+#mainFooter .footerContent .socials .fab:hover:nth-child(even) {
+  background-color: aqua;
+  color: #333;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  cursor: pointer;
 }

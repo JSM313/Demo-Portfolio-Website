@@ -1,9 +1,10 @@
 @import "config";
 @import "utilities";
+@import "homeLayout";
 
 // *GENERAL/CORE STYLES
 * {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -99,52 +100,39 @@ img {
   // }
 }
 
-// Home Sections
-#home {
-  // HOME SECTION A
-  &A {
-    .specials {
-      margin-top: 3rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
+#mainFooter {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
 
-      .fas {
-        color: $main-color;
-        padding-bottom: 0.4rem;
-      }
-    }
-  }
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
 
-  // HOME SECTION B
-  &B {
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    .socials .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
 
-      li {
-        line-height: 2;
-
-        &.stats-title {
-          font-size: 1.5rem;
-        }
-
-        &.stats-number {
-          font-size: 2rem;
-          font-weight: bold;
-        }
+      &:hover:nth-child(odd) {
+        background-color: crimson;
+        color: $dark-color;
+        transition: all 0.6s;
+        cursor: pointer;
       }
 
-      div {
-        padding: 3rem 0;
-
-        &:nth-child(odd) {
-          background: $light-color;
-        }
-
-        &:nth-child(even) {
-          background: $medium-color;
-        }
+      &:hover:nth-child(even) {
+        background-color: aqua;
+        color: $dark-color;
+        transition: all 0.6s;
+        cursor: pointer;
       }
     }
   }
