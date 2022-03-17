@@ -1,0 +1,85 @@
+// UTILITY CLASSES
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &Main {
+    @extend %btn-shared;
+    color: $dark-color;
+    background-color: $main-color;
+  }
+
+  &Light {
+    @extend %btn-shared;
+    color: $dark-color;
+    background-color: $light-color;
+  }
+
+  &Dark {
+    @extend %btn-shared;
+    color: $light-color;
+    background-color: $dark-color;
+  }
+}
+
+// ^ signifies any btn class that starts with the word 'btn' will face this effect.
+button[class^="btn"]:hover,
+a[class^="btn"]:hover,
+input[class^="btn"]:hover {
+  background-color: $main-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+// Padding utility classes
+
+.py {
+  &1 {
+    padding: 1rem 0;
+  }
+  &2 {
+    padding: 2rem 0;
+  }
+  &3 {
+    padding: 3rem 0;
+  }
+  &4 {
+    padding: 4rem 0;
+  }
+}
+
+.my {
+  &1 {
+    margin: 1rem 0;
+  }
+  &2 {
+    margin: 2rem 0;
+  }
+  &3 {
+    margin: 3rem 0;
+  }
+  &4 {
+    margin: 4rem 0;
+  }
+}

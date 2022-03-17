@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>PortFolio Website</title>
+  </head>
+  <body>
+    <!-- CREATING THE HEADER -->
+    <header id="headerHome">
+      <div class="container">
+        <nav id="mainNav">
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="headerContent">
+          <h1>
+            I am John The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Photographer","Designer","UI/UX Dev"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I specialize in graphic design, UI/Ux and photography
+          </p>
+          <a href="work.html" class="btnLight">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION A :- Specialize -->
+    <section id="homeA" class="textCenter py2">
+      <div class="container">
+        <h2 class="sectionTitle">I specialize in</h2>
+        <div class="bottomLine"></div>
+        <p class="lead">
+          Photography as well as digital masterpieces and UI/UX layouts for
+          websites and mobile applications.
+        </p>
+
+        <div class="specials">
+          <div>
+            <i class="fas fa-file-alt fa-2x"></i>
+            <h3>Concepting</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              dignissimos explicabo laborum culpa, voluptates ratione temporibus
+              repellendus dolorum voluptate quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-desktop fa-2x"></i>
+            <h3>UI/UX</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              dignissimos explicabo laborum culpa, voluptates ratione temporibus
+              repellendus dolorum voluptate quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-object-ungroup fa-2x"></i>
+            <h3>Vsual Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              dignissimos explicabo laborum culpa, voluptates ratione temporibus
+              repellendus dolorum voluptate quidem.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-thumbs-up fa-2x"></i>
+            <h3>Interaction</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              dignissimos explicabo laborum culpa, voluptates ratione temporibus
+              repellendus dolorum voluptate quidem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B: Stats -->
+    <section id="homeB" class="textCenter py2">
+      <div class="stats">
+        <div>
+          <ul>
+            <li><i class="fas fa-users fa-3x"></i></li>
+            <li class="stats-title">Clients</li>
+            <li class="stats-number">100</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-award fa-3x"></i></li>
+            <li class="stats-title">Awards</li>
+            <li class="stats-number">3</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
+            <li class="stats-title">Hours Worked</li>
+            <li class="stats-number">4100</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-code-branch fa-3x"></i></li>
+            <li class="stats-title">Projects Completed</li>
+            <li class="stats-number">135</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/typewriter.js"></script>
+  </body>
+</html>
