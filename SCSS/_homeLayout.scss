@@ -59,8 +59,8 @@
       &Icon {
         border-radius: 50%;
         background: $dark-color;
-        // color: #fff;
-        color: set-text-color($dark-color);
+        color: #fff;
+        // color: setTextColor($light-color);
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -91,7 +91,7 @@
         right: 0;
         font-size: 28px;
         background: $main-color;
-        color: set-text-color($main-color);
+        color: setTextColor($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;

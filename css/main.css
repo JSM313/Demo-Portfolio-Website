@@ -35,6 +35,26 @@ input[class^="btn"]:hover {
   background-color: #ffbc00;
 }
 
+.bgMain {
+  background: #ffbc00;
+  color: #fff;
+}
+
+.bgLight {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.bgDark {
+  background: #333;
+  color: #fff;
+}
+
+.bgMedium {
+  background: #ccc;
+  color: #000;
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -182,6 +202,7 @@ input[class^="btn"]:hover {
   right: 0;
   font-size: 28px;
   background: #ffbc00;
+  color: #fff;
   border-radius: 50%;
   height: 15px;
   width: 15px;
@@ -280,6 +301,118 @@ img {
 #headerHome .headerContent h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+#headerInner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
+#aboutA .aboutInfo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "bioImage bio bio" "aw1 aw2 aw3";
+  gap: 1.2rem;
+}
+
+#aboutA .bioImage {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioImage;
+}
+
+#aboutA .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+}
+
+#aboutA .award1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aw1;
+}
+
+#aboutA .award2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aw2;
+}
+
+#aboutA .award3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aw3;
+}
+
+#aboutA .award1 .fas,
+#aboutA .award2 .fas,
+#aboutA .award3 .fas {
+  color: #ffbc00;
+  margin: 1rem;
+}
+
+#aboutB .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+#aboutB .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: #ffbc00;
+}
+
+#aboutC .aboutLogos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+#aboutC .aboutLogos img {
+  width: 70%;
+}
+
+#aboutD .testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+#aboutD .testimonials ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutD .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#aboutD .testimonials img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 #mainFooter {
